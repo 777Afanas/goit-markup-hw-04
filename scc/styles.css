@@ -152,7 +152,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
+    }
 
 .header-link,
 .header-mail {
@@ -431,15 +431,13 @@ color: var(--main-txt-cl);
    background-color: #FFFFFF;
    border-radius: 50%;
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
 }
 
 .tm-icon {
-    /* fill: AFB1B8;  */
-    /* fill: red; */
-    fill: none;
-     fill: red;
+    --color5: #afb1b8;
+    --color4: #afb1b8;
 }
 
 .t-link:hover {
@@ -447,9 +445,11 @@ color: var(--main-txt-cl);
 }
 
 .t-link:hover .tm-icon {
-    /* fill: FFFFFF; */
-    fill: red;
+   --color5: #fff;
+   --color4: #fff;
 }
+
+
 
 /* 
 ==================
@@ -596,6 +596,17 @@ color: var(--main-txt-cl);
 
 .ft-subtitle {
     margin-bottom: 20px;
+
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
 }
 
 
@@ -613,12 +624,21 @@ color: var(--main-txt-cl);
       
    width: 44px;
    height: 44px;
-   background-color: #FFFFFF;
-   border-radius: 50%;
+   background: rgba(255, 255, 255, 0.1);    
+   border-radius: 50%; 
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
 }
+
+.ft-icon {
+    --color4: #fff;
+}
+
+.fs-link:hover {
+    background-color:  #2196F3;
+}
+
 
 
 /* 

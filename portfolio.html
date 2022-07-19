@@ -44,10 +44,22 @@
         </nav>
         <ul class="header-cnt list">
           <li class="header-cnt-item">
-            <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <div class="header-box">
+              <svg class="header-icon" width="18" height="12">
+                <use href="./images/icons/symbol-defs.svg#hd-envelope"></use>
+              </svg>
+              <a class="header-mail header-link-current link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </div>
           </li>
           <li class="header-cnt-item">
-            <a class="header-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <div class="header-box">
+              <svg class="header-icon" width="10" height="16">
+                <use href="./images/icons/symbol-defs.svg#hd-smartphone"></use>
+              </svg>
+              <a class="header-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -202,21 +214,79 @@
     </main>
     <!-- Footer section -->
     <footer class="footer">
-      <div class="container">
-        <a class="logo link" href="/" lang="en">Web<span class="f-lg">Studio</span></a>
-        <address class="address">
-          <ul class="address-list list">
-            <li class="address-item">
-              <a href="" class="address-add link">г. Киев, пр-т Леси Украинки, 26</a>
+      <div class="container ft-container">
+        <div class="lg-address">
+          <a class="logo link ftr" href="/" lang="en">Web<span class="f-lg">Studio</span></a>
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-item">
+                <a href="" class="address-add ft-lk-current link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="address-mail ft-lk-current link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="address-phone ft-lk-current link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="ft-social">
+          <h4 class="ft-subtitle">присоединяйтесь</h4>
+          <ul class="social list">
+            <!-- social-item -->
+            <li class="fs-item">
+              <a
+                class="fs-link link"
+                href=""
+                target="_blank"
+                rel="noopener no-referrer"
+                aria-label="instagram"
+                ><svg class="ft-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#ftr-instagram"></use></svg
+              ></a>
             </li>
-            <li class="address-item">
-              <a class="address-mail link" href="mailto:info@example.com">info@example.com</a>
+            <li class="fs-item">
+              <a
+                class="fs-link link"
+                href=""
+                target="_blank"
+                rel="noopener no-referrer"
+                aria-label="twitter"
+                ><svg class="ft-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#ftr-twitter"></use></svg
+              ></a>
             </li>
-            <li class="address-item">
-              <a class="address-phone link" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="fs-item">
+              <a
+                class="fs-link link"
+                href=""
+                target="_blank"
+                rel="noopener no-referrer"
+                aria-label="facebook"
+                ><svg class="ft-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#ftr-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="fs-item">
+              <a
+                class="fs-link link"
+                href=""
+                target="_blank"
+                rel="noopener no-referrer"
+                aria-label="linkedin"
+                ><svg class="ft-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#ftr-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
