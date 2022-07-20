@@ -128,30 +128,18 @@ body{
 
 .header-cnt {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+    /* outline: 2px solid red; */
 }
-
-/* .header-mail::before {
-    display: block;
-    content: "";
-    height: 16px;
-    background-image: url(../images/icons/symbol-defs.svg#hd-envelope);
-    background-size: contain;
-    background-position: center;
-
-    outline: 2px solid red;
-
-}
-
-.header-cnt-item:nth-child(1)::before {
-    background-image: url(../images/icons/symbol-defs.svg#hd-envelope);
-} */
-
 
 .header-box {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    /* outline: 2px solid violet; */
     }
 
 .header-link,
@@ -163,22 +151,31 @@ body{
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
+
+    /* outline: 2px solid green; */
 }
-/* 
-.header-mail::before {
-    content: '';
 
-    background-image: url(<svg class="tm-icon" width="20" height="20">
-                <use href="./images/icons/symbol-defs.svg#tm-instagram"></use></svg
-              >);
-} */
+.hd-icon-ml {
+    width: 16px;
+    height: 12px;
+    --color1: var(--accent-cl);
+    /* outline: 2px solid blue; */
+}
 
+.hd-icon-smph {
+    width: 10px;
+    height: 16px;
+    --color1: var(--secondary-cl);
+    /* outline: 2px solid blue; */
+}
 
 .header-link:hover,
 .header-link:focus, 
 .header-phone:hover,
-.header-phone:focus {
+.header-phone:focus,
+.hd-icon-smph:hover {
     color: var(--accent-cl);
+    --color1: var(--accent-cl);
 }
 
 .header-link-current {
@@ -286,11 +283,6 @@ Hero section
     gap: 30px;
     /* background-color: var(--light-bg-cl); */
 }
-
-/* .features-item {
-    width: 270px;
-} */
-
 
 .ftur-box {
     display: flex;
@@ -450,30 +442,20 @@ color: var(--main-txt-cl);
 }
 
 
-
 /* 
 ==================
 Clients sektion
 =================
 */ 
 
-.clients {
-    max-width: 1170px;
-    height: 180px;
-    margin-left: auto;
-    margin-right: auto; 
-    
-    padding-bottom: 200px;     
-
-}
-
-
 .clients-list {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between; 
     gap: 30px;
     /* background-color: var(--light-bg-cl); */
+
+    /* outline: 2px solid red; */
 }
 
 .clients-title {
@@ -486,35 +468,58 @@ letter-spacing: 0.03em;
 color: var(--main-txt-cl);
 }
 
+.client-item {
+    max-width: 170px;
+    height: 90px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 
-/* .client-item {
-    width: 270px;
-} */
+    /* outline: 2px solid green; */
+}
 
-
-.cl-box {
+/* .cl-box {
     display: flex;
     align-items: center;
     justify-content: center;
+    
     max-width: 170px;
-    height: 90px;
-    /* margin-bottom: 30px;     */
+    height: 90px; 
+    margin-bottom: 30px;     
     border-top: 1px solid #AFB1B8;
     border-right: 1px solid #AFB1B8;
     border-bottom: 1px solid #AFB1B8;
     border-left: 1px solid #AFB1B8;
     border-radius: 4px;
     background-color: #E5E5E5;  
+
+     outline: 2px solid blue;
 }
 
-.ftur-icon {
-  display: inline-block;
-  width: 106px;
-  height: 60px;
-  fill: currentColor;
+.cl-box:hover {
+    border: 4px solid red;
+}   */
+
+.cl-icon {
+    display: inline-block;
+    width: 170px;
+    height: 92px;
+    fill: currentColor;
+
+    border-top: 1px solid #AFB1B8;
+    border-right: 1px solid #AFB1B8;
+    border-bottom: 1px solid #AFB1B8;
+    border-left: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-color: #E5E5E5;  
+
+    /* outline: 2px solid purple; */
+    cursor: pointer;
   
 }
 
+.cl-icon:hover {
+    border: 1px solid #2196F3;
+} 
 
 
 /* 
@@ -608,7 +613,6 @@ color: var(--main-txt-cl);
     color: #FFFFFF;
 
 }
-
 
 .social {
     display: flex;
