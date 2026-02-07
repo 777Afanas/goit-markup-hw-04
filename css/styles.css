@@ -1,18 +1,18 @@
 /* ======== VARIABLES ======== */
-:root {  
+:root {
   /* Текстові та фонові кольори */
-    --primary-white-color: rgb(255 255 255);
-    --primary-black-color: rgb(67 68 85);
-    --secondary-black-color: rgb(46 47 66);
-    --secondary-bg-color: rgb(244 244 253);
-  
-    /* Брендові та акцентні кольори */
-    --primary-brand-color: rgb(77 90 229);     /* Iris */
-    --primary-accent-color: rgb(64 75 191);     /* Ocean */
-  
-    /* Колір для рамок (Borders) */
-    --secondary-accent-color: rgb(231 233 252);  
-} 
+  --primary-white-color: rgb(255 255 255);
+  --primary-black-color: rgb(67 68 85);
+  --secondary-black-color: rgb(46 47 66);
+  --secondary-bg-color: rgb(244 244 253);
+
+  /* Брендові та акцентні кольори */
+  --primary-brand-color: rgb(77 90 229); /* Iris */
+  --primary-accent-color: rgb(64 75 191); /* Ocean */
+
+  /* Колір для рамок (Borders) */
+  --secondary-accent-color: rgb(231 233 252);
+}
 
 /* ======== /VARIABLES ======== */
 
@@ -206,9 +206,12 @@ button {
   margin-right: auto;
   padding: 188px 0;
   background-image:
-    linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url('../images/hero/hr-box-opt.jpg');
-  /* background-color: var(--secondary-black-color); */
+
+  background-repeat: no-repeat; /* Уникнення повторення зображення */
+  background-position: center; /* Вирівнювання по центру */
+  background-size: cover; /* Розтягування на всю площу */
 }
 
 .main-title {
@@ -235,6 +238,8 @@ button {
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
   background-color: var(--primary-brand-color);
+  /* transition для плавної зміни фону */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -281,6 +286,11 @@ button {
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0 0 4px 4px;
   background-color: var(--primary-white-color);
+  /* Додаємо постійну тінь для всіх карток команди */
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-item img {
